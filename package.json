@@ -1,0 +1,34 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "copyWasm": "copy-files-from-to --config copy-files-from-to.json",
+    "dev": "npm run copyWasm && next dev",
+    "build": "npm run copyWasm && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "copy-files-from-to": "^3.12.1",
+    "country-flag-icons": "^1.5.19",
+    "d3-hierarchy": "^3.1.2",
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "scichart": "^4.0.0-beta.734",
+    "scichart-react": "^0.1.9"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/d3-hierarchy": "^3.1.7",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
